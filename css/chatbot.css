@@ -1,0 +1,353 @@
+:root {
+	--color-code: #0E76BC;
+}
+
+#chatbot_toggle {
+  position: absolute;
+  right: 0;
+  border: none;
+  height: 48px;
+  width: 48px;
+  background: white;
+  padding: 14px;
+  color: var(--color-code);
+}
+
+.toggle ion-icon {
+  font-size: 50px;
+  color: white;
+}
+
+.side-nav .inventory,
+.side-nav.active .inventory {
+  width: 0px;
+  height: 0px;
+  transition: 0.5s;
+}
+.side-nav .inventory .book img {
+  position: absolute;
+  height: 150px;
+  width: 100px;
+  z-index: 2;
+}
+
+.cred-form.active{
+  height: 100%;
+  margin-top: 40%;
+  justify-content: center;
+}
+
+.cred-form.inactive {
+  display: none;
+}
+
+.cred-form .user-form {
+  align-items: center;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-direction: column;
+}
+
+.cred-form .user-form input {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+  width: 70%;
+  color: var(--color-code);
+  font-size: 16px;
+  border: 1px solid var(--color-code);
+}
+
+.cred-form .user-form input[type="submit"] {
+  background: var(--color-code);
+  border: none;
+  color: white;
+  width: 100px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.chat-area .chat-message-div .chat-message-received .chat-with-pdf .bookmark {
+  position: absolute;
+  top: 5px;
+  font-size: 25px;
+  left: 3px;
+}
+
+.chat-area .chat-message-div .chat-message-received .chat-with-pdf .reader {
+  position: absolute;
+  top: 30px;
+  font-size: 25px;
+  right: 3px;
+  color: var(--color-code);
+}
+
+.chat-area .chat-message-div .chat-message-received .chat-with-pdf {
+  position: relative;
+}
+
+.side-nav.active .inventory {
+  display: grid;
+  grid-template-columns: 120px 120px;
+  grid-template-rows: 200px 200px;
+  width: 300px;
+  height: 100%;
+  background-color: var(--color-code);
+}
+
+#chatbot_toggle:hover {
+  backdrop-filter: blur(20px);
+}
+
+.close {
+  color: var(--color-code);
+}
+
+.line {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+}
+
+.main-title {
+  background-color: white;
+  color: var(--color-code);
+  font-size: large;
+  padding: 14px;
+  font-weight: bold;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  align-items: center;
+  /* height: 48px; */
+}
+
+.main-title a {
+  color: var(--color-code);
+}
+
+.main-title>div{
+  height:48px;
+  width:48px;
+  display:flex;
+  margin-left:8px;
+}
+
+.main-title ion-icon {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cred-form {
+  height: 100%;
+  margin-top: 40%;
+}
+
+.cred-form form {
+  align-items: center;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-direction: column;
+}
+
+.cred-form form input {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+  width: 70%;
+  color: var(--color-code);
+  font-size: 16px;
+  border: 1px solid var(--color-code);
+}
+
+.cred-form form input[type="submit"] {
+  background: var(--color-code);
+  border: none;
+  color: white;
+  width: 100px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.chat-area {
+  flex-grow: 1;
+  overflow: auto;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-message {
+  padding: 8px 48px 8px 16px;
+  background-color: white;
+  color: var(--color-code);
+  flex-grow: 1;
+  border: none;
+}
+
+.input-message:focus {
+  outline: none;
+}
+
+.input-div {
+  height: 48px;
+  display: flex;
+}
+
+.input-send {
+  background: white;
+  width: 48px;
+  height: 48px;
+  right: 0%;
+  border: none;
+  cursor: pointer;
+}
+
+.input-send ion-icon {
+  color: var(--color-code);
+	font-size: 20px;
+  margin: 11px 8px;
+}
+
+.chat-message-div {
+  display: flex;
+}
+
+.chat-message-sent {
+  margin: 8px 16px 8px 64px;
+  padding: 8px 16px;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 100ms;
+  font-family: Roboto, sans-serif;
+  color: var(--color-code);
+	border: 2px solid var(--color-code);
+	box-shadow: -2px 2px var(--color-code);
+  border-radius: 8px 8px 0px 8px;
+  background-color: white;
+}
+
+.chat-message-received {
+  margin: 8px 64px 8px 16px;
+  padding: 8px 16px;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 100ms;
+  font-family: Roboto, sans-serif;
+  color: var(--color-code);
+	box-shadow: 2px 2px var(--color-code);
+	border: 2px solid var(--color-code);
+  border-radius: 8px 8px 8px 0px;
+  background-color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::placeholder {
+	color: var(--color-code);
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media (min-width: 450px) {
+    .main-card {
+      width: 96%;
+      max-width: 400px;
+      height: calc(100% - 32px) !important;
+      border-radius: 8px !important;
+      max-height: 600px;
+      margin: 16px!important;
+    }
+    
+    .collapsed {
+      width: 48px !important;
+      height: 48px !important;
+      border-radius: 24px !important;
+      margin: 16px!important;
+    }
+
+    .main-card {
+      background: white;
+      backdrop-filter: blur(10px);
+      color: var(--color-code);
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      border-radius: 0px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      right: 0;
+      bottom: 0;
+      position: fixed;
+      z-index: 100;
+      transition: all 0.5s;
+      box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 450px) {
+  .main-card {
+    background: white;
+    backdrop-filter: blur(10px);
+    color: var(--color-code);
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1000;
+    transition: all 0.5s;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .collapsed {
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 24px !important;
+    margin: 16px!important;
+  }
+}

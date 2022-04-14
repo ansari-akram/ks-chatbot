@@ -1,0 +1,47 @@
+<!doctype html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Space Science Website Template</title>
+	<link rel="stylesheet" type="text/css" href="css/chatbot.css">
+</head>
+
+<body>
+	<!-- chatbot start -->
+	<div id="chatbot" class="main-card collapsed">
+		<button id="chatbot_toggle">
+			<ion-icon name="chatbubbles-outline" size="small" id="open"></ion-icon>
+			<ion-icon name="close-outline" size="small" class="close" id="close"></ion-icon>
+		</button>
+		<div class="main-title">
+			<span>Kernel Sphere AI Chatbot</span>
+		</div>
+		<div class="cred-form active" id="cred-form">
+			<div class="user-form">
+				<input type="text" placeholder="Name" id="user-name" required autocomplete="on" />
+				<input type="email" placeholder="Email Address" id="user-email" required autocomplete="on" />
+				<input type="number" placeholder="Phone Number" id="user-phone" required autocomplete="on" />
+				<input type="submit" value="Start" id="user-submit" onclick="checkForm()">
+			</div>
+		</div>
+		<div class="chat-area" id="message-box">
+		</div>
+		<div class="line"></div>
+		<div class="input-div">
+			<input class="input-message" name="message" type="text" id="message" placeholder="Type your message..." />
+			<button class="input-send" onclick="send()">
+				<ion-icon name="send"></ion-icon>
+			</button>
+		</div>
+	</div>
+
+	<script src="js/chatbot.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<!-- chatbot end -->
+</body>
+
+</html>
