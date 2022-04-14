@@ -18,11 +18,10 @@ function addMsg(msg) {
     "</div>";
   div.className = "chat-message-div";
   document.getElementById("message-box").appendChild(div);
+
   //SEND MESSAGE TO API
   document.getElementById("message").value = "";
-  document.getElementById("message-box").scrollTop = document.getElementById(
-    "message-box"
-  ).scrollHeight;
+  document.getElementById("message-box").scrollTop = document.getElementById("message-box").scrollHeight;
 
   //LOADER START
   var loader = document.createElement("div");
