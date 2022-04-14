@@ -1,4 +1,5 @@
 var running = false;
+var message_box = document.getElementById('message-box');
 var response_list = [];
 
 function send() {
