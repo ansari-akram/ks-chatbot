@@ -8,7 +8,7 @@
 ```
 index.html
 
-copy code HTML code from index.html
+copy HTML code from index.html
 
 from <-- chatbot start --> to <-- chatbot end -->
 
