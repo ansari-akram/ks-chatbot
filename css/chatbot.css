@@ -2,6 +2,14 @@
 	--color-code: #0E76BC;
 }
 
+img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: -8px;
+  z-index: -1;
+}
+
 #chatbot_toggle {
   position: absolute;
   right: 0;
@@ -16,19 +24,6 @@
 .toggle ion-icon {
   font-size: 50px;
   color: white;
-}
-
-.side-nav .inventory,
-.side-nav.active .inventory {
-  width: 0px;
-  height: 0px;
-  transition: 0.5s;
-}
-.side-nav .inventory .book img {
-  position: absolute;
-  height: 150px;
-  width: 100px;
-  z-index: 2;
 }
 
 .cred-form.active{
@@ -145,7 +140,7 @@
 }
 
 .cred-form form {
-  align-items: center;
+  /* align-items: center; */
   display: flex;
   padding-left: 10px;
   padding-right: 10px;
